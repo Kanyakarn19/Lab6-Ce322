@@ -1,0 +1,26 @@
+import java.util.*;
+import java.util.Scanner;
+
+public class Data{
+   
+    public static void main(String[] args){
+        Map<String,String> colour = new HashMap<String,String>();
+        Scanner round = new Scanner(System.in);
+        System.out.print("How many people you want to save: ");
+        int num = round.nextInt();
+       
+        for(int i=0;i<num;i++)
+        {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter your name: ");
+        String key = input.nextLine();
+        System.out.print("Enter your colour: ");
+        String values = input.nextLine();
+       
+        colour.put(key,values)
+   
+        }
+        System.out.println(colour);
+       
+ }
+}
