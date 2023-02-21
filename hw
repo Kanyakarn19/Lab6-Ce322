@@ -1,20 +1,28 @@
- */
-
 import java.util.*;
-public class ScoreMap
-{
- public static void main(String[] args)
- {
-     Scanner scanner=new Scanner(System.in);
-     System.out.println("input your name: ");
-     String name = scanner.next();
-     System.out.println("Please input your color : ");
-     String color = scanner.next();
- 
-     HashMap<String, String> input = new HashMap<String,String>();
-     
-     
-     System.out.println(input.keySet());
-     
+import java.util.Scanner;
+
+public class Data{
+   
+    public static void main(String[] args){
+       Map<String,String> colour = new HashMap<String,String>();
+        
+        Scanner round = new Scanner(System.in);
+        System.out.print("How many people: ");
+        int num = round.nextInt();
+       
+        for(int i=0;i<num;i++)
+        {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Input your name: ");
+        String name = input.nextLine();
+        System.out.print("Input your colour: ");
+        String values = input.nextLine();
+       
+        colour.put(name,values);
+   
+        }
+        System.out.println(colour);
+       
  }
 }
+
